@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Home</title>
+	 <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef1f6;
+        }
+
+        .hero {
+            height: 400px;
+            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn {
+            background-color: #2196f3;
+            border: none;
+            padding: 12px 25px;
+            color: white;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .section {
+            width: 80%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .dish {
+            background: #f7f9fc;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .dish img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+            color: #2c3e50;
+        }
+        .back-to-top {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 20px 48px;
+  transition: background .2s ease;
+  background-color: #6097d5;
+}
+.back-to-top:hover { background: #3C7BC2; }
+    </style>
+</head>
+
+<body>
+
+    <nav class="main-nav">
+        <div class="brand"><span class="dot"></span>BlueWave Restaurant</div>
+        <div class="links">
+            <a href="index.html" class="active">Home</a>
+            <a href="product.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Login.html">Login</a>
+        </div>
+    </nav>
+    <p id="date"></p>
+<script>
+  document.getElementById("date").innerText =
+    new Date().toDateString();
+</script>
+
+
+    <section class="hero">
+        <div>
+            <h2>Welcome to Our Restaurant</h2>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2 style="text-align:center; color:#2c3e50;">Our Menu</h2>
+        <div class="menu-grid">
+            <div class="dish">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" />
+                <h3>Grilled Steak</h3>
+                <p>Delicious premium beef cooked to perfection.</p>
+            </div>
+            <div class="dish">
+                <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" />
+                <h3>Italian Pasta</h3>
+                <p>Fresh pasta with rich creamy sauce.</p>
+            </div>
+            <div class="dish">
+                <img src="Freshsalad.jpeg" alt="Fresh Salad" />
+                <h3>Fresh Salad</h3>
+                <p>Healthy, fresh, and full of flavor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 style="text-align:center; color:#2c3e50;">About Us</h2>
+        <p style="font-size:18px; color:#444; text-align:center;">We serve high‑quality food with exceptional service.
+            Enjoy a relaxing dining experience with modern styling and friendly atmosphere.</p>
+    </section>
+
+    <footer>
+        © 2025 BlueWave Restaurant — All rights reserved
+    </footer>
+  	<script src="nav.js"></script>
+    <a class="back-to-top" href="#top">Welcome to Our Restaurant</a>
+</body>
+</html>
