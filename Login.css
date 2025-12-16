@@ -26,6 +26,7 @@ body > .main-nav {
   flex-shrink: 0;
 }
 
+
 /* Login Container */
 .login-container {
   flex: 1;
@@ -164,18 +165,7 @@ body > .main-nav {
   color: #555;
 }
 
-.link {
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 600;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
 
-.link:hover {
-  color: var(--primary-hover);
-  text-decoration: underline;
-}
 
 /* Animation */
 @keyframes fadeIn {
